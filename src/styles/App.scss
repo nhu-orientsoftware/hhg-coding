@@ -1,0 +1,47 @@
+#root {
+  min-height: 100vh;
+}
+.App {
+  min-height: inherit;
+}
+.ant-layout {
+  min-height: inherit;
+}
+.ant-layout-header {
+  padding: 0 24px;
+  background-color: #40a9ff;
+}
+.ant-modal-footer {
+  display: none;
+}
+.ant-notification {
+  .ant-notification-notice-message {
+    margin-bottom: 0px;
+    padding: 4px;
+  }
+  
+  border-radius: 5px;
+  min-height: 50px;
+  &-notice {
+    width: 300px;
+    padding-top: 12px;
+    max-height: 80px;
+    &-message {
+      color: #ffffff;
+    }
+  }
+}
+.ant-layout-sider {
+  background-color: white !important;
+}
+.ant-table-content {
+  min-height: 326px;
+}
+.notification {
+  &-success {
+    background-color: #24f32b !important;
+  }
+  &-error {
+    background-color: #d82916 !important;
+  }
+}

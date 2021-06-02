@@ -1,0 +1,122 @@
+{
+  "env": {
+      "browser": true,
+      "es6": true
+  },
+  "extends": [
+      "airbnb",
+      "airbnb/hooks",
+      "eslint:recommended",
+      "plugin:react/recommended",
+      "plugin:@typescript-eslint/recommended"
+    ],
+    "plugins": [
+      "react",
+      "@typescript-eslint",
+      "import"
+    ],
+    "parser":"@typescript-eslint/parser",
+    "parserOptions": {
+      "ecmaFeatures": {
+        "jsx": true
+      },
+      "ecmaVersion": 2018,
+      "sourceType": "module",
+      "allowImportExportEverywhere": true
+    },
+    "ignorePatterns": ["src/**/*.test.js"],
+    "rules": {
+      "no-unused-vars": [
+        "error",
+        {
+          "vars": "all",
+          "args": "after-used",
+          "ignoreRestSiblings": false
+        }
+      ],
+      "import/no-unresolved": ["off"], 
+      "import/no-extraneous-dependencies": ["off"],
+      "import/no-cycle": ["off"],
+      "indent": [
+        2,
+        2,
+        {
+          "SwitchCase": 1
+        }
+      ],
+      "linebreak-style": [
+        0,
+        "unix"
+      ],
+      "quotes": [
+        2,
+        "single"
+      ],
+      "semi": [
+        2,
+        "always"
+      ],
+      "curly": [
+        2,
+        "all"
+      ],
+      "max-len": [
+        "error",
+        {
+          "code": 152
+        }
+      ],
+      "camelcase": [
+        2,
+        {
+          "properties": "always"
+        }
+      ],
+      "eqeqeq": [
+        2,
+        "smart"
+      ],
+      "one-var-declaration-per-line": [
+        2,
+        "always"
+      ],
+      "comma-dangle": [
+        2,
+        "only-multiline"
+      ],
+      "eol-last": ["off"],
+      "no-multiple-empty-lines": ["error", { "max": 99, "maxEOF": 0 }],
+      "import/no-named-as-default": 0,
+      "new-cap": 2,
+      "no-case-declarations": 0,
+      "react/jsx-uses-react": "error",
+      "react/jsx-uses-vars": "error",
+      "react/jsx-props-no-spreading": 0,
+      "react/jsx-filename-extension": [
+        1,
+        {
+          "extensions": [
+            ".js",
+            ".jsx",
+            ".ts",
+            ".tsx"
+          ]
+        }
+      ],
+      "react/jsx-no-bind": [1, {
+        "ignoreDOMComponents": false,
+        "ignoreRefs": false,
+        "allowArrowFunctions": false,
+        "allowFunctions": false,
+        "allowBind": false
+      }],
+      "react/no-multi-comp": [1, { "ignoreStateless": true }],
+      "react/forbid-prop-types": [1, { "forbid": ["any", "array", "object"], "checkContextTypes": false, "checkChildContextTypes": false }],
+      "import/extensions": "off",
+      "react/prop-types": 0,
+      "react/react-in-jsx-scope": "off",
+      "@typescript-eslint/explicit-module-boundary-types": "off",
+      "ignoreRestArgs": 0,
+      "@typescript-eslint/no-explicit-any": "off"
+    }
+  }

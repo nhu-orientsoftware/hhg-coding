@@ -1,0 +1,36 @@
+.main-layout {
+  &__wrapper {
+    min-height: inherit;
+  }
+  &__header {
+    display: flex;
+    align-items: stretch;
+    text-align: center;
+    padding: 0;
+    width: 100%;
+    z-index: 99;
+    &__logo {
+      color: $textWhite;
+      text-transform: uppercase;
+      font-weight: 600;
+      font-size: 14px;
+    }
+    &--menu {
+      display: flex;
+      margin: 15px;
+      .ant-btn-text{
+        color:  $textGrey;
+        &:hover {
+          color: $textBlack;
+        }
+      }
+    }
+  }
+  &__site-layout{
+    &__content{
+      margin: 24px 16px;
+      padding: 24px;
+      min-height: 280px;
+    }
+  }
+}
